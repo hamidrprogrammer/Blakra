@@ -10225,6 +10225,780 @@ blockquote {
     font-size: 28px;
   }
 }
+.marked {
+  background-image: linear-gradient(360deg, var(--bgp-base), #c61c09d1 50%, white), url('../images/giphy-3.gif');
+  -webkit-text-fill-color: transparent;
+  background-position: 0 0, 0 0;
+  background-size: auto, cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: Gottak, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.services-cms {
+  width: 100%;
+}
+
+.services-image-appear {
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 15vw;
+  display: flex;
+  position: absolute;
+  inset: -7vh 0% auto auto;
+  overflow: hidden;
+}
+
+.services-image-appear.is_more-left {
+  margin-right: 20vw;
+}
+
+.services-hover-loader-container {
+  opacity: 0;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20vw;
+  height: 100%;
+  padding-right: 10vw;
+  display: flex;
+  position: absolute;
+  inset: 0% auto 0% 0%;
+  overflow: hidden;
+}
+.light .asteroids {
+    filter: invert(1);
+}
+.asteroids-far-container, .asteroids-near-container {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.asteroids-logo-container {
+    animation: float 6s ease-in-out infinite;
+    height: 100%;
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.near-container {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.asteroids-far-container, .asteroids-near-container {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+@media screen and (min-width: 768px) {
+    .vortex-container {
+        height: 18rem;
+        margin-top: 6rem;
+        width: 18rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .hero-t-container {
+        height: 100%;
+        margin: auto;
+        max-width: 100%;
+        width: 52rem;
+    }
+}
+.light .asteroids {
+    filter: invert(1);
+}
+.asteroids-logo-container {
+    animation: float 6s ease-in-out infinite;
+    height: 100%;
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+@media screen and (min-width: 768px) {
+    .hero-t {
+        margin-top: -8rem;
+        width: 16rem;
+    }
+}
+.hero-t {
+    animation: float 6s ease-in-out infinite;
+    display: block;
+    height: auto;
+    margin: -8rem auto 2rem;
+    position: relative;
+    width: 16rem;
+}
+.hero-planet {
+    animation: reverse-rotate 30s linear infinite;
+    height: 50%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transform-origin: 50% 50%;
+    transition: filter .3s, transform .3s;
+    width: 50%;
+}
+.figma-logo-container {
+    height: auto;
+    position: absolute;
+    right: 28%;
+    top: 46%;
+    width: 1.5rem;
+    z-index: 1;
+}
+@media screen and (min-width: 768px) {
+    .figma-logo-container {
+        filter: url(#displacementFilter2);
+        right: 38%;
+        top: 64%;
+        width: 3rem;
+    }
+}
+.vortex-container {
+    height: 16rem;
+    margin: auto;
+    position: relative;
+    width: 16rem;
+}
+.vortex {
+    filter: url(#displacementFilter);
+    height: 100%;
+    width: 100%;
+}
+.asteroids {
+    height: 100%;
+    left: 50%;
+    margin: auto;
+    max-height: 40rem;
+    max-width: 84rem;
+    perspective: 600px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    transform-style: preserve-3d;
+    transition: filter .3s;
+    width: 100%;
+    z-index: 2;
+}
+.hero-t-container {
+    display: flex
+;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+    margin: 6rem auto auto;
+    max-width: 90%;
+    position: relative;
+    transition: transform .5s;
+            width: 52rem;
+
+}
+
+
+@media screen and (min-width: 1600px) {
+    .asteroid6 {
+        left:32%;
+        top: 63%;
+        width: 2rem
+    }
+}
+
+.asteroid7 {
+    height: auto;
+    position: absolute;
+    right: 15%;
+    top: 36%;
+    width: 1rem;
+    z-index: 1
+}
+
+@media screen and (min-width: 768px) {
+    .asteroid7 {
+        right:39%;
+        top: 58%;
+        width: 1.4rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .asteroid7 {
+        right:35%;
+        top: 65%;
+        width: 1.4rem
+    }
+}
+
+.asteroid8 {
+    height: auto;
+    position: absolute;
+    right: 4%;
+    top: 28%;
+    width: 1.5rem;
+    z-index: 1
+}
+
+@media screen and (min-width: 768px) {
+    .asteroid8 {
+        right:26%;
+        top: 34%;
+        width: 2rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .asteroid8 {
+        right:21%;
+        top: 34%;
+        width: 2rem
+    }
+}
+
+.wordpress-logo-container {
+    height: 2rem;
+    height: auto;
+    left: 24%;
+    position: absolute;
+    top: -6%;
+    width: 2rem;
+    z-index: 9
+}
+
+.wordpress-logo-container img {
+    height: 3.75rem;
+    width: 3.75rem
+}
+
+@media screen and (min-width: 768px) {
+    .wordpress-logo-container {
+        filter:url(#displacementFilter2);
+        height: 3rem;
+        left: 38%;
+        top: 10%;
+        width: 3rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .wordpress-logo-container {
+        height:6rem;
+        left: 32%;
+        top: 4%;
+        width: 6rem
+    }
+}
+
+.figma-logo-container {
+    height: auto;
+    position: absolute;
+    right: 28%;
+    top: 46%;
+    width: 1.5rem;
+    z-index: 1
+}
+
+@media screen and (min-width: 768px) {
+    .figma-logo-container {
+        filter:url(#displacementFilter2);
+        right: 38%;
+        top: 64%;
+        width: 3rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .figma-logo-container {
+        right:26%;
+        top: 72%;
+        width: 3rem
+    }
+}
+
+.cursor-logo-container {
+    height: auto;
+    left: 61%;
+    position: absolute;
+    top: -4%;
+    width: 1.5rem;
+    z-index: 1
+}
+
+@media screen and (min-width: 768px) {
+    .cursor-logo-container {
+        left:26%;
+        top: 31%;
+        width: 2.5rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .cursor-logo-container {
+        left:22%;
+        top: 29%;
+        width: 2.5rem
+    }
+}
+
+.github-logo-container {
+    animation: float 5s ease-in-out infinite;
+    height: auto;
+    position: absolute;
+    right: 20%;
+    top: 3%;
+    width: 2rem;
+    z-index: 1
+}
+
+@media screen and (min-width: 768px) {
+    .github-logo-container {
+        right:38%;
+        top: 12%;
+        width: 4rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .github-logo-container {
+        right:34%;
+        top: 6%;
+        width: 4rem
+    }
+}
+
+.chrome-logo-container {
+    animation: float 2s ease-in-out infinite;
+    height: auto;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    width: 1.5rem;
+    z-index: 1
+}
+
+@media screen and (min-width: 768px) {
+    .chrome-logo-container {
+        right:27%;
+        top: 23%;
+        width: 2.5rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .chrome-logo-container {
+        right:21%;
+        top: 21%;
+        width: 2.5rem
+    }
+}
+
+.three-js-logo-container {
+    animation: float 8s ease-in-out infinite;
+    height: auto;
+    left: 31%;
+    position: absolute;
+    top: 50%;
+    width: 1.5rem;
+    z-index: 1
+}
+
+@media screen and (min-width: 768px) {
+    .three-js-logo-container {
+        left:38%;
+        top: 70%;
+        width: 3rem
+    }
+}
+.hero {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    min-height: 100svh;
+    position: relative
+}
+
+.hero,.hero .hero-loader {
+    background-color: var(--color-bg);
+    width: 100%
+}
+
+.hero .hero-loader {
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    z-index: 3
+}
+
+.light .hero {
+    background-color: #f0ece8;
+    background-color: var(--color-light-dark)
+}
+
+.parallax {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    transform-style: preserve-3d
+}
+
+.parallax .bg {
+    background-position: 50%;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    transform: translateZ(-10px) scale(2);
+    width: 100%
+}
+
+.parallax .content {
+    color: #fff;
+    transform: translateZ(10px)
+}
+
+.asteroids {
+    height: 100%;
+    left: 50%;
+    margin: auto;
+    max-height: 40rem;
+    max-width: 84rem;
+    perspective: 600px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    transform-style: preserve-3d;
+    transition: filter .3s;
+    width: 100%;
+    z-index: 2
+}
+
+.light .star {
+    background: var(--color-text)
+}
+
+.light .asteroids-near-container {
+    opacity: .8
+}
+
+.light .asteroids {
+    filter: invert(1)
+}
+
+.asteroids-near-container {
+    animation: float 4s ease-in-out infinite
+}
+
+.asteroids-far-container,.asteroids-near-container {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1
+}
+
+.asteroids-far-container {
+    animation: float 6s ease-in-out infinite;
+    opacity: .7
+}
+
+@media screen and (min-width: 768px) {
+    .asteroids-far-container {
+        animation:float 10s ease-in-out infinite
+    }
+}
+
+.asteroids-logo-container {
+    animation: float 6s ease-in-out infinite;
+    height: 100%;
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1
+}
+
+.asteroid1 {
+    height: auto;
+    position: absolute;
+    right: 8%;
+    top: 0;
+    width: 3rem;
+    z-index: 100
+}
+
+@media screen and (min-width: 768px) {
+    .asteroid1 {
+        right:31%;
+        top: 11%;
+        width: 4rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .asteroid1 {
+        right:24%;
+        top: 5%;
+        width: 4rem
+    }
+}
+
+.asteroid2 {
+    height: auto;
+    left: 3%;
+    position: absolute;
+    top: 4%;
+    width: 4rem;
+    z-index: 400
+}
+
+@media screen and (min-width: 768px) {
+    .asteroid2 {
+        left:26%;
+        top: 15%;
+        width: 5rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .asteroid2 {
+        left:18%;
+        top: 10%;
+        width: 6rem
+    }
+}
+
+.asteroid3 {
+    height: auto;
+    left: 8%;
+    position: absolute;
+    top: 44%;
+    width: 4rem;
+    z-index: 300
+}
+
+@media screen and (min-width: 768px) {
+    .asteroid3 {
+        left:28%;
+        top: 54%;
+        width: 6rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .asteroid3 {
+        left:18%;
+        top: 61%;
+        width: 6rem
+    }
+}
+
+.asteroid4 {
+    height: auto;
+    position: absolute;
+    right: 10%;
+    top: 45%;
+    width: 4rem;
+    z-index: 250
+}
+
+@media screen and (min-width: 768px) {
+    .asteroid4 {
+        right:25%;
+        top: 50%;
+        width: 6rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .asteroid4 {
+        right:17%;
+        top: 58%;
+        width: 6rem
+    }
+}
+
+.asteroid5 {
+    height: auto;
+    left: 7%;
+    position: absolute;
+    top: 22%;
+    width: 1.5rem;
+    z-index: 2
+}
+
+@media screen and (min-width: 768px) {
+    .asteroid5 {
+        left:29%;
+        top: 39%;
+        width: 2rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .asteroid5 {
+        left:19%;
+        top: 40%;
+        width: 2.5rem
+    }
+}
+
+.asteroid6 {
+    height: auto;
+    left: 45%;
+    position: absolute;
+    top: -3%;
+    width: 1rem;
+    z-index: 1
+}
+
+@media screen and (min-width: 768px) {
+    .asteroid6 {
+        left:40%;
+        top: 60%;
+        width: 2rem
+    }
+}
+
+.three-js-logo-container {
+    animation: float 8s ease-in-out infinite;
+    height: auto;
+    left: 31%;
+    position: absolute;
+    top: 50%;
+    width: 1.5rem;
+    z-index: 1
+}
+
+@media screen and (min-width: 768px) {
+    .three-js-logo-container {
+        left:38%;
+        top: 70%;
+        width: 3rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .three-js-logo-container {
+        left:32%;
+        top: 75%;
+        width: 3rem
+    }
+}
+
+.gsap-logo-container {
+    animation: float 2s ease-in-out infinite;
+    height: auto;
+    left: 10%;
+    position: absolute;
+    top: 38%;
+    width: 1.5rem;
+    z-index: 1
+}
+
+@media screen and (min-width: 768px) {
+    .gsap-logo-container {
+        left:28%;
+        top: 50%;
+        width: 3rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .gsap-logo-container {
+        left:22%;
+        top: 54%;
+        width: 3rem
+    }
+}
+
+.adobe-logo-container {
+    animation: float 3s ease-in-out infinite;
+    height: auto;
+    position: absolute;
+    right: 4%;
+    top: 37%;
+    width: 1.5rem;
+    z-index: 1
+}
+
+@media screen and (min-width: 768px) {
+    .adobe-logo-container {
+        right:26%;
+        top: 43%;
+        width: 3rem
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .adobe-logo-container {
+        right:16%;
+        top: 46%;
+        width: 3rem
+    }
+}
+
+.hero {
+    overflow: hidden
+}
+
+.hero,.hero .tagline {
+    color: var(--color-text);
+    text-align: center
+}
+
+.hero .tagline {
+    margin: auto;
+    max-width: 52rem;
+    text-transform: uppercase
+}
+
+.hero .tagline .main-text {
+    animation: textShadow 1.6s infinite
+}
+
+.hero .tagline .tagline-span-text {
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s ease .5s;
+    background: linear-gradient(#e8e8e8 50%,transparent 0);
+    background: linear-gradient(var(--color-highlight) 50%,transparent 0);
+    -webkit-background-clip: text;
+    background-size: 2px 2px;
+    color: #e8e8e8;
+    color: var(--color-highlight);
+    display: block;
+    position: relative;
+    text-shadow: 1px 1px 4px hsla(0,0%,100%,.1);
+    transition: color .3s
+}
 
 #w-node-_41f86a14-906d-fef3-0187-2337e768d18b-5033b99b {
   grid-area: Area;

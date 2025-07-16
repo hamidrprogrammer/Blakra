@@ -118,9 +118,206 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <link rel="icon" href="wp-content/uploads/2025/06/cropped-Frame-688-192x192.png" sizes="192x192" />
 <link rel="apple-touch-icon" href="wp-content/uploads/2025/06/cropped-Frame-688-180x180.png" />
 <meta name="msapplication-TileImage" content="https://viralistic.nl/wp-content/uploads/2025/06/cropped-Frame-688-270x270.png" />
+
+<style>
+        :root {
+            /* Inner shadow */
+            --shadow-offset: 0;
+            --shadow-blur: 20px;
+            --shadow-spread: -5px;
+            --shadow-color: rgba(255, 255, 255, 0.7);
+
+            /* Painted glass */
+            --tint-color: 255, 255, 255;
+            --tint-opacity: 0.4;
+
+            /* Background frost */
+            --frost-blur: 2px;
+
+            /* SVG noise/distortion */
+            --noise-frequency: 0.008;
+            --distortion-strength: 77;
+
+            /* Outer shadow blur */
+            --outer-shadow-blur: 24px;
+        }
+
+       
+
+        #controls {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            max-width: 280px;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        #controls h2 {
+            margin: 8px 0 4px;
+            font-size: 16px;
+        }
+
+        #controls label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 4px 0;
+        }
+
+        #controls input[type=range] {
+            width: 140px;
+        }
+
+        #controls input[type=color],
+        #controls input[type=text] {
+            border: none;
+            padding: 0;
+            width: 120px;
+            height: 24px;
+            background: #fff;
+            color: #000;
+            font-size: 12px;
+        }
+      
+.nsb-wrapper {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 100vmax;
+  isolation: isolate;
+  background-color: rgb(255 255 255 / 25%);
+  color: rgb(255 255 255 / 90%);
+  text-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+  font-size: 1.25rem;
+  box-shadow: 0 6px 6px rgb(0 0 0 / 20%), 0 0 20px rgb(0 0 0 / 10%);
+  text-align: center;
+  user-select: none;
+  cursor: grab;
+  
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+  }
+  
+ 
+  &::before {
+    backdrop-filter: blur(3px);
+    filter: url(#glass-distortion);
+    z-index: -1;
+  }
+  
+ 
+  &::after {
+    box-shadow: inset 2px 2px 1px 0 rgb(255 255 255 / 50%), inset -1px -1px 1px 1px rgb(255 255 255 / 50%);
+  }
+  
+  &.dragging {
+    cursor: grabbing;
+  }
+}
+        .glassDiv {
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            border-radius: 28px;
+            cursor: move;
+            isolation: isolate;
+            touch-action: none;
+            /* enable pointer dragging on touch */
+            box-shadow: 0px 6px var(--outer-shadow-blur) rgba(0, 0, 0, 0.2);
+        }
+
+        .glassDiv::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            border-radius: 28px;
+            box-shadow:
+                inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
+            background-color: rgba(var(--tint-color), var(--tint-opacity));
+        }
+
+        .glassDiv::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            border-radius: 28px;
+            backdrop-filter: blur(var(--frost-blur));
+            filter: url(#glass-distortion);
+            isolation: isolate;
+            -webkit-backdrop-filter: blur(var(--frost-blur));
+            -webkit-filter: url("#glass-distortion");
+        }
+
+        @media (max-width: 600px) {
+            .glassDiv {
+                top: 30%;
+                width: 250px;
+                height: 120px;
+            }
+
+            #controls {
+                top: auto;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                max-width: 94%;
+                border-radius: 0;
+            }
+
+            #controls input[type=range],
+            #controls input[type=text] {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body overscroll-behavior="none" class="home wp-singular page-template-default page page-id-192 wp-custom-logo wp-embed-responsive wp-theme-viralistic-live30">
- 
+ <svg class="svg-container">
+      <defs>
+        <filter id="displacementFilter">
+          <feTurbulence type="turbulence" baseFrequency="0.107469" numOctaves="1" result="turbulence"></feTurbulence>
+          <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="20" xChannelSelector="R" yChannelSelector="G" result="displacement"></feDisplacementMap> 
+        </filter>
+        <filter id="displacementFilter2">
+          <feGaussianBlur stdDeviation="20" result="blur"></feGaussianBlur>
+          <feTurbulence type="turbulence" baseFrequency="0.05" numOctaves="1" result="turbulence"></feTurbulence>
+          <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="10" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+        </filter>
+        <filter id="filter-glitch-3">
+          <feTurbulence type="fractalNoise" baseFrequency="0.000001" numOctaves="1" result="warp"></feTurbulence>
+          <feOffset dx="-90" dy="-90" result="warpOffset"></feOffset>
+          <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset"></feDisplacementMap>
+        </filter>
+      </defs>
+    </svg>
+
+  <svg xmlns="http://www.w3.org/2000/svg" role="presentation" style="display: none">
+  <filter id="glass-distortion" x="0%" y="0%" width="100%" height="100%" filterUnits="objectBoundingBox">
+    <feTurbulence type="fractalNoise" baseFrequency="0.001 0.005" numOctaves="1" seed="17" result="turbulence"/>
+    <feComponentTransfer in="turbulence" result="mapped">
+      <feFuncR type="gamma" amplitude="1" exponent="10" offset="0.5" />
+      <feFuncG type="gamma" amplitude="0" exponent="1" offset="0" />
+      <feFuncB type="gamma" amplitude="0" exponent="1" offset="0.5" />
+    </feComponentTransfer>
+    <feGaussianBlur in="turbulence" stdDeviation="3" result="softMap" />
+    <feSpecularLighting in="softMap" surfaceScale="5" specularConstant="1" specularExponent="100" lighting-color="white" result="specLight">
+      <fePointLight x="-200" y="-200" z="300" />
+    </feSpecularLighting>
+    <feComposite in="specLight" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litImage" />
+    <feDisplacementMap in="SourceGraphic" in2="softMap" scale="200" xChannelSelector="R" yChannelSelector="G" />
+  </filter>
+</svg>
   <div class="page-content">
     <header class="header" sym="true">
       <nav class="nav section">
@@ -325,30 +522,99 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
         </div>
         <div class="h-10vh"></div>
         <div class="styling is-home">
-          <div class="moving-blocks-wrapper">
-            <div class="moving-blocks-canvas">
-              <div data-w-id="ecb41bb7-dc59-b346-e2aa-f67a55519c1d" class="mbc-wrapper">
-                <div class="mb-block is_glow"></div>
-              </div>
-              <div data-w-id="8794ee5f-df75-cdec-2d38-5f3251c71ca8" class="mbc-wrapper">
-                <div class="mb-block"></div>
-                <div class="mb-block"></div>
-              </div>
-              <div data-w-id="474ad514-10c5-31ad-5643-4500393a0cf2" class="mbc-wrapper">
-                <div class="mb-block"></div>
-              </div>
-              <div data-w-id="381969a5-4e91-2e93-0fcb-f9b0fe8b50c8" class="mbc-wrapper">
-                <div class="mb-block is_glow"></div>
-                <div class="mb-block"></div>
-              </div>
-              <div data-w-id="5e6164d0-2224-f4b2-8dc9-a04f6ca8f517" class="mbc-wrapper">
-                <div class="mb-block"></div>
-              </div>
-              <div data-w-id="361d26ae-d6b3-dd0d-e452-98b19e946327" class="mbc-wrapper">
-                <div class="mb-block"></div>
-                <div class="mb-block"></div>
-              </div>
+       <div class="moving-blocks-wrapper" style="width: 100%;">
+            <div class="moving-blocks-canvas" style="width: 100%;">
+             <div class="hero-t-container" style="width: 100%;">
+            <div class="asteroids">
+                <div class="asteroids-near-container  stagger-in" style="opacity: 1;">
+                    <img class="asteroid asteroid1 parallax-item lazy entered loaded" data-src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid1.png" alt="Asteroid" data-ll-status="loaded" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid1.png" style="transform: translate3d(-3.09423e-20px, -1.52277e-19px, 0px);">
+                    <img class="asteroid asteroid2 parallax-item lazy entered loaded" data-src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid2.png" alt="Asteroid" data-ll-status="loaded" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid2.png" style="transform: translate3d(-1.33728e-20px, -4.84541e-21px, 0px);">
+                    <img class="asteroid asteroid3 parallax-item lazy entered loaded" data-src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid3.png" alt="Asteroid" data-ll-status="loaded" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid3.png" style="transform: translate3d(-7.41333e-21px, 4.94137e-21px, 0px);">
+                    <img class="asteroid asteroid4 parallax-item lazy entered loaded" data-src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid4.png" alt="Asteroid" data-ll-status="loaded" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid4.png" style="transform: translate3d(4.19547e-22px, 1.56664e-19px, 0px);">
+                    <noscript>
+                        <img class="asteroid asteroid1 parallax-item" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid1.png" alt="Asteroid">
+                        <img class="asteroid asteroid2 parallax-item" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid2.png" alt="Asteroid">
+                        <img class="asteroid asteroid3 parallax-item" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid3.png" alt="Asteroid">
+                        <img class="asteroid asteroid4 parallax-item" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid4.png" alt="Asteroid">
+                    </noscript>
+                </div>
+                <div class="asteroids-far-container">
+                    <img class="asteroid asteroid5 parallax-item lazy entered loaded" data-src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid5.png" alt="Asteroid" data-ll-status="loaded" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid5.png" style="transform: translate3d(-5.73085e-21px, 5.81083e-22px, 0px);">
+                    <img class="asteroid asteroid6 parallax-item lazy entered loaded" data-src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid6.png" alt="Asteroid" data-ll-status="loaded" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid6.png" style="transform: translate3d(-9.86655e-21px, 8.75929e-21px, 0px);">
+                    <img class="asteroid asteroid7 parallax-item lazy entered loaded" data-src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid7.png" alt="Asteroid" data-ll-status="loaded" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid7.png" style="transform: translate3d(-1.16269e-20px, 2.7784e-20px, 0px);">
+                    <img class="asteroid asteroid8 parallax-item lazy entered loaded" data-src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid8.png" alt="Asteroid" data-ll-status="loaded" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid8.png" style="transform: translate3d(6.23554e-21px, -2.47286e-21px, 0px);">
+                    <noscript>
+                        <img class="asteroid asteroid5 parallax-item" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid5.png" alt="Asteroid">
+                        <img class="asteroid asteroid6 parallax-item" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid6.png" alt="Asteroid">
+                        <img class="asteroid asteroid7 parallax-item" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid7.png" alt="Asteroid">
+                        <img class="asteroid asteroid8 parallax-item" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/asteroid8.png" alt="Asteroid">
+                    </noscript>
+                </div>
+                <div class="asteroids-logo-container stagger-in" style="opacity: 1;">
+                <div class="wordpress-logo-container stagger-in" style="opacity: 1;">
+                    <img class="wordpress-logo parallax-item lazy entered loaded" data-src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/wordpress-logo.svg" alt="WordPress" data-ll-status="loaded" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/wordpress-logo.svg" style="transform: translate3d(-1.16466e-20px, -8.55314e-21px, 0px);">
+                    <noscript>
+                        <img class="wordpress-logo parallax-item" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/wordpress-logo.svg" alt="WordPress">
+                    </noscript>
+                </div>
+                <div class="figma-logo-container">
+                    <img class="figma-logo parallax-item lazy entered loaded" data-src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/figma-logo.svg" alt="Figma" data-ll-status="loaded" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/figma-logo.svg" style="transform: translate3d(-7.0522e-21px, 2.34901e-20px, 0px);">
+                    <noscript>
+                        <img class="figma-logo parallax-item" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/figma-logo.svg" alt="Figma">
+                    </noscript>
+                </div>
+                <div class="cursor-logo-container">
+                    <img class="cursor-logo parallax-item lazy entered loaded" data-src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/cursor-logo.png" alt="Cursor" data-ll-status="loaded" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/cursor-logo.png" style="transform: translate3d(-2.30458e-21px, -1.29902e-22px, 0px);">
+                    <noscript>
+                        <img class="cursor-logo parallax-item" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/cursor-logo.png" alt="Cursor">
+                    </noscript>
+                </div>
+                <div class="github-logo-container">
+                    <img class="github-logo parallax-item lazy entered loaded" data-src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/github-logo.svg" alt="Github" data-ll-status="loaded" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/github-logo.svg" style="transform: translate3d(-1.25797e-20px, -2.63072e-20px, 0px);">
+                    <noscript>
+                        <img class="github-logo parallax-item" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/github-logo.svg" alt="Github">
+                    </noscript>
+                </div>
+                <div class="chrome-logo-container">
+                    <img class="chrome-logo parallax-item lazy entered loaded" data-src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/chrome-logo.svg" alt="Chrome" data-ll-status="loaded" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/chrome-logo.svg" style="transform: translate3d(2.82394e-21px, -2.36026e-20px, 0px);">
+                    <noscript>
+                        <img class="chrome-logo parallax-item" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/chrome-logo.svg" alt="Chrome">
+                    </noscript>
+                </div>
+                <div class="three-js-logo-container">
+                    <img class="three-js-logo parallax-item lazy entered loaded" data-src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/three-js-logo.svg" alt="Chrome" data-ll-status="loaded" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/three-js-logo.svg" style="transform: translate3d(-8.92361e-22px, 1.12207e-21px, 0px);">
+                    <noscript>
+                        <img class="three-js-logo parallax-item" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/three-js-logo.svg" alt="Chrome">
+                    </noscript>
+                </div>
+                <div class="gsap-logo-container">
+                    <img class="gsap-logo parallax-item lazy entered loaded" data-src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/gsap-logo.svg" alt="GSAP" data-ll-status="loaded" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/gsap-logo.svg" style="transform: translate3d(-3.12703e-21px, 1.04584e-21px, 0px);">
+                    <noscript>
+                        <img class="gsap-logo parallax-item" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/gsap-logo.svg" alt="GSAP">
+                    </noscript>
+                </div>
+                <div class="adobe-logo-container">
+                    <img class="adobe-logo parallax-item lazy entered loaded" data-src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/adobe-logo.svg" alt="Adobe" data-ll-status="loaded" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/adobe-logo.svg" style="transform: translate3d(3.80605e-21px, 1.86874e-20px, 0px);">
+                    <noscript>
+                        <img class="adobe-logo parallax-item" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/adobe-logo.svg" alt="Adobe">
+                    </noscript>
+                </div>
             </div>
+        </div> 
+        <div class="vortex-container">
+            <img alt="a swirling event horizon" class="vortex lazy entered loaded" data-src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/vortex-mobile.png" data-ll-status="loaded" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/vortex-mobile.png">
+            <img alt="black hole sun" class="hero-planet lazy entered loaded" data-src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/black-hole-sun-compressed.png" data-ll-status="loaded" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/black-hole-sun-compressed.png">
+            <noscript>
+                <img src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/vortex-mobile.png" alt="a swirling event horizon">
+                <img src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/black-hole-sun-compressed.png" alt="black hole sun" class="hero-planet">
+            </noscript>
+        </div>
+        <img alt="Bristol WordPress Developer Harrison's logo - a stylised floating T" class="hero-t lazy entered loaded" data-src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/hero-t-spaceman.png" data-srcset="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/hero-t-mobile.png 400w, 
+        https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/hero-t-spaceman.png 768w" data-sizes="100w" data-ll-status="loaded" sizes="100w" srcset="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/hero-t-mobile.png 400w, 
+        https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/hero-t-spaceman.png 768w" src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/hero-t-spaceman.png">
+        <noscript>
+            <img data-src="https://tomoliverharrison.co.uk/wp-content/themes/toh2025/dist/images/hero-t-spaceman.png" alt="Bristol WordPress Developer Harrison's logo - a stylised floating T">
+        </noscript>
           </div>
           <div class="hero-grad"></div>
         </div>
