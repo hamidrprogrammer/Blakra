@@ -8,10 +8,7 @@
 
 
 <script src="../ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-<script type="text/javascript">WebFont.load({
-google: {
-families: ["Varela:400","Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]
-}});</script>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
 <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
 <link href="wp-content/themes/viralistic-live30/assets/images/favicond6f4.png?v=1749944621" rel="shortcut icon" type="image/x-icon">
 <link href="wp-content/themes/viralistic-live30/assets/images/webclipd6f4.png?v=1749944621" rel="apple-touch-icon">
@@ -437,11 +434,11 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
     </header>
     <main class="main">
       <section data-w-id="979d0f21-48ef-6120-cefd-3ec1d4581e30" class="main-hero section">
-        <div class="h-20vh"></div>
-        <figure class="container">
-          <div data-w-id="954fbecd-0f0c-4330-4ccf-f35c7a27859b" class="col flex-verti-ss">
+        <div id="parallax-container" style="width: 100%; height: 100vh; position: relative; overflow: hidden;">
+          <div class="parallax-layer" style="background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); position: absolute; width: 100%; height: 100%;" data-depth="0.1"></div>
+          <div class="parallax-layer" style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100%;" data-depth="0.5">
             <h1 class="hero-heading" data-textarea="tan25fe78ba">Built for brands that want to <span class="marked">grow</span> instead of guess</h1>
-            <div class="wrapper gap-10">
+            <div class="wrapper gap-10" style="margin-top: 20px;">
               <a data-w-id="ee93e2ed-20ee-670e-d83f-1d707ea5e6f1" href="https://forms.fillout.com/t/3bdNKaGtotus" class="new-special-button w-inline-block" sym="true" data-link="af339cd9">
                 <div class="nsb-wrapper">
                   <div class="nsb-icon">
@@ -462,61 +459,52 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
               </a>
             </div>
           </div>
-        </figure>
-        <div class="h-10vh"></div>
+        </div>
         <div class="container">
-          <div class="w-layout-grid features-grid">
-            <div id="w-node-dd85ef23-a4d5-8b05-671a-59d7c5199ff0-e70b733c" class="perspective">
-              <div data-w-id="22c84c19-c8ea-228b-e696-a96985cecdd2" class="feature-card flex-verti-ss">
-                <div class="featured-card-number" data-text="t601">01</div>
-                <div class="h-20vh"></div>
-                <h2 class="features-title" data-textarea="tan6651fb17">One team. <br><em>Built for speed.</em></h2>
-                <p class="feature-paragraph" data-textarea="tan641a8db3">No juggling freelancers. <br>No bloated agencies. <br><br>We cover strategy, content, tech and automation in one go.</p>
-                <div class="feature-card-shine"></div>
-                <div class="styling"><img class="featured-card-image" src="wp-content/themes/viralistic-live30/assets/images/group-40165_1.webp" alt="" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.5, 1.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.5, 1.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.5, 1.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.5, 1.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" sizes="(max-width: 890px) 100vw, 890px" data-w-id="679ea141-f7ea-854f-af7c-94316021d49c" loading="lazy" srcset="https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/group-40165_1group-40165.webp 500w, https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/group-40165_1group-40165.webp 800w, https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/group-40165_1.webp 890w, " data-img="iec9714c">
-                  <div class="feature-grad"></div>
-                </div>
+          <div class="w-layout-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); grid-gap: 20px;">
+            <div class="feature-card flex-verti-ss" style="grid-column: 1 / span 2;">
+              <div class="featured-card-number" data-text="t601">01</div>
+              <div class="h-20vh"></div>
+              <h2 class="features-title" data-textarea="tan6651fb17">One team. <br><em>Built for speed.</em></h2>
+              <p class="feature-paragraph" data-textarea="tan641a8db3">No juggling freelancers. <br>No bloated agencies. <br><br>We cover strategy, content, tech and automation in one go.</p>
+              <div class="feature-card-shine"></div>
+                <div class="styling"><img class="featured-card-image" src="https://images.unsplash.com/photo-1518709268805-4e9042af9f29?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.5, 1.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.5, 1.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.5, 1.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.5, 1.5, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" sizes="(max-width: 890px) 100vw, 890px" data-w-id="679ea141-f7ea-854f-af7c-94316021d49c" loading="lazy" srcset="https://images.unsplash.com/photo-1518709268805-4e9042af9f29?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60 500w, https://images.unsplash.com/photo-1518709268805-4e9042af9f29?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60 800w, https://images.unsplash.com/photo-1518709268805-4e9042af9f29?ixlib=rb-1.2.1&auto=format&fit=crop&w=890&q=60 890w, " data-img="iec9714c">
+                <div class="feature-grad"></div>
               </div>
             </div>
-            <div id="w-node-_4268d1e1-1dac-9afe-fd3d-f0f278a8b052-e70b733c" class="perspective">
-              <div data-w-id="4268d1e1-1dac-9afe-fd3d-f0f278a8b053" class="feature-card flex-verti-ss">
-                <div class="featured-card-number" data-text="t602">02</div>
-                <div class="h-40"></div>
-                <h3 class="features-title" data-textarea="ta56cd0213"><em>Strategy</em> before <br>screens</h3>
-                <p class="feature-paragraph text-ch-max25" data-text="t4db95067">We start with what your audience's needs and build a site that moves them to action.</p>
-                <div class="feature-card-shine"></div>
-                <div class="styling"><img src="wp-content/themes/viralistic-live30/assets/images/frame-40166.webp" loading="lazy" data-w-id="4268d1e1-1dac-9afe-fd3d-f0f278a8b064" alt="" class="featured-card-image _2nd" data-img="in120fb051" srcset="">
-                  <div class="feature-grad larger"></div>
-                </div>
+            <div class="feature-card flex-verti-ss">
+              <div class="featured-card-number" data-text="t602">02</div>
+              <div class="h-40"></div>
+              <h3 class="features-title" data-textarea="ta56cd0213"><em>Strategy</em> before <br>screens</h3>
+              <p class="feature-paragraph text-ch-max25" data-text="t4db95067">We start with what your audience's needs and build a site that moves them to action.</p>
+              <div class="feature-card-shine"></div>
+                <div class="styling"><img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f29?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" loading="lazy" data-w-id="4268d1e1-1dac-9afe-fd3d-f0f278a8b064" alt="" class="featured-card-image _2nd" data-img="in120fb051" srcset="">
+                <div class="feature-grad larger"></div>
               </div>
             </div>
-            <div id="w-node-_1dc0e6d6-e552-396f-e68e-23fc6e63bfb0-e70b733c" class="perspective">
-              <div data-w-id="1dc0e6d6-e552-396f-e68e-23fc6e63bfb1" class="feature-card flex-verti-ss">
-                <div class="featured-card-number" data-text="t603">03</div>
-                <div class="h-40"></div>
-                <h3 class="features-title" data-textarea="tan51b80d71">Built to <em>think</em></h3>
-                <p class="feature-paragraph" data-textarea="tan7a06b5a3">Smart and intergrated systems that scale <em>with</em> you.</p>
-                <div class="feature-card-shine"></div>
-                <div class="styling"><img src="wp-content/themes/viralistic-live30/assets/images/frame-40164.webp" loading="lazy" alt="" class="featured-card-image _2nd" data-img="in1579618f" srcset="">
-                  <div class="feature-grad"></div>
-                </div>
+            <div class="feature-card flex-verti-ss">
+              <div class="featured-card-number" data-text="t603">03</div>
+              <div class="h-40"></div>
+              <h3 class="features-title" data-textarea="tan51b80d71">Built to <em>think</em></h3>
+              <p class="feature-paragraph" data-textarea="tan7a06b5a3">Smart and intergrated systems that scale <em>with</em> you.</p>
+              <div class="feature-card-shine"></div>
+                <div class="styling"><img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f29?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" loading="lazy" alt="" class="featured-card-image _2nd" data-img="in1579618f" srcset="">
+                <div class="feature-grad"></div>
               </div>
             </div>
-            <div id="w-node-_544bac49-aa50-1a5f-81ba-ddae1416cb70-e70b733c" class="perspective">
-              <div data-w-id="544bac49-aa50-1a5f-81ba-ddae1416cb71" class="feature-card flex-verti-ss">
-                <div class="feature-card-shine"></div>
-                <div class="styling"><img src="wp-content/themes/viralistic-live30/assets/images/image-619.webp" loading="lazy" alt="" class="featured-card-image _2nd fw" data-img="i1fe6a978" srcset="">
-                  <div class="feature-grad"></div>
-                </div>
-                <div class="hover-appear-wrapper shown">
-                  <a aria-label="check out viralisttic services" data-w-id="31581eb6-458c-f0dd-b036-e5652933c2a0" href="#perks" class="hp-card-link-cover w-inline-block" data-link="a42138902"></a>
-                  <div class="button-xs">
-                    <p class="btn-xs-text" data-text="t72623872">Our formula</p>
-                    <div class="xs-icon"></div>
-                  </div>
-                </div>
-                <div class="featured-card-number" data-text="t604">04</div>
+            <div class="feature-card flex-verti-ss" style="grid-column: 2 / span 2;">
+              <div class="feature-card-shine"></div>
+                <div class="styling"><img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f29?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" loading="lazy" alt="" class="featured-card-image _2nd fw" data-img="i1fe6a978" srcset="">
+                <div class="feature-grad"></div>
               </div>
+              <div class="hover-appear-wrapper shown">
+                <a aria-label="check out viralisttic services" data-w-id="31581eb6-458c-f0dd-b036-e5652933c2a0" href="#perks" class="hp-card-link-cover w-inline-block" data-link="a42138902"></a>
+                <div class="button-xs">
+                  <p class="btn-xs-text" data-text="t72623872">Our formula</p>
+                  <div class="xs-icon"></div>
+                </div>
+              </div>
+              <div class="featured-card-number" data-text="t604">04</div>
             </div>
           </div>
         </div>
@@ -619,120 +607,42 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
           <div class="hero-grad"></div>
         </div>
       </section>
-      <section id="perks" class="services-section section">
-        <div class="h-10vh"></div>
+      <section id="perks" class="services-section section" style="padding: 40px 0;">
         <div class="container">
           <div class="wrapper flex-verti-ss">
             <h2 class="h2" data-text="t560f747e">Services</h2>
           </div>
         </div>
-        <div class="services-container">
-          <div class="col flex-verti-cc">
-            <div class="services-cms w-dyn-list" udy-collection="wf-services">
-              <div role="list" class="w-dyn-items">
-                <div role="listitem" class="w-dyn-item">
-                  <a data-w-id="622ba8c8-e33f-e39f-c6c0-316b14ba9cb3" href="wf-services/branding/index.html" class="services-card w-inline-block">
-                    <div class="services-hover-loader-container">
-                      <div class="services-hover-loader-inner"></div>
-                      <div class="hover-fader is_left"></div>
-                      <div class="hover-fader"></div>
-                    </div>
-                    <div class="statement-content-box">
-                      <h3 aria-label="account login button" class="statement-card-statement">Branding</h3>
-                    </div>
-                    <div class="services-image-appear is_more-left"><img src="wp-content/uploads/2025/06/6846db5283afc3e35033bba6_sign20and20ux2020lightbox20sign.webp" loading="lazy" alt="" class="" data-img="i317f733b" srcset="https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bba6_sign20and20ux2020lightbox20sign-300x225.webp 300w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bba6_sign20and20ux2020lightbox20sign-1024x768.webp 1024w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bba6_sign20and20ux2020lightbox20sign-768x576.webp 768w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bba6_sign20and20ux2020lightbox20sign.webp 1500w">
-                      <p class="service-appear-text text-tagline">Branding and Identity</p>
-                    </div>
-                  </a>
-                </div><div role="listitem" class="w-dyn-item">
-                  <a data-w-id="622ba8c8-e33f-e39f-c6c0-316b14ba9cb3" href="wf-services/e-commerce/index.html" class="services-card w-inline-block">
-                    <div class="services-hover-loader-container">
-                      <div class="services-hover-loader-inner"></div>
-                      <div class="hover-fader is_left"></div>
-                      <div class="hover-fader"></div>
-                    </div>
-                    <div class="statement-content-box">
-                      <h3 aria-label="account login button" class="statement-card-statement">E-Commerce</h3>
-                    </div>
-                    <div class="services-image-appear is_more-left"><img src="wp-content/uploads/2025/06/6846db5283afc3e35033ba59_r-mockups2c20ipad20pro202024-1-scaled.png" loading="lazy" alt="" class="" data-img="i317f733b" srcset="https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033ba59_r-mockups2c20ipad20pro202024-1-300x225.png 300w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033ba59_r-mockups2c20ipad20pro202024-1-1024x768.png 1024w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033ba59_r-mockups2c20ipad20pro202024-1-768x576.png 768w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033ba59_r-mockups2c20ipad20pro202024-1-1536x1152.png 1536w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033ba59_r-mockups2c20ipad20pro202024-1-2048x1536.png 2048w">
-                      <p class="service-appear-text text-tagline">E-commerce Web Design</p>
-                    </div>
-                  </a>
-                </div><div role="listitem" class="w-dyn-item">
-                  <a data-w-id="622ba8c8-e33f-e39f-c6c0-316b14ba9cb3" href="wf-services/lightning-fast-webdesign/index.html" class="services-card w-inline-block">
-                    <div class="services-hover-loader-container">
-                      <div class="services-hover-loader-inner"></div>
-                      <div class="hover-fader is_left"></div>
-                      <div class="hover-fader"></div>
-                    </div>
-                    <div class="statement-content-box">
-                      <h3 aria-label="account login button" class="statement-card-statement">Lightning fast webdesign</h3>
-                    </div>
-                    <div class="services-image-appear is_more-left"><img src="wp-content/uploads/2025/06/6846db5283afc3e35033bbe9_ipad20pro20parkup20dubai20branding20website.webp" loading="lazy" alt="" class="" data-img="i317f733b" srcset="https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bbe9_ipad20pro20parkup20dubai20branding20website-300x225.webp 300w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bbe9_ipad20pro20parkup20dubai20branding20website-1024x768.webp 1024w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bbe9_ipad20pro20parkup20dubai20branding20website-768x576.webp 768w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bbe9_ipad20pro20parkup20dubai20branding20website.webp 1500w">
-                      <p class="service-appear-text text-tagline">Lightning fast WebFlow design - Same day delivery</p>
-                    </div>
-                  </a>
-                </div><div role="listitem" class="w-dyn-item">
-                  <a data-w-id="622ba8c8-e33f-e39f-c6c0-316b14ba9cb3" href="wf-services/photography/index.html" class="services-card w-inline-block">
-                    <div class="services-hover-loader-container">
-                      <div class="services-hover-loader-inner"></div>
-                      <div class="hover-fader is_left"></div>
-                      <div class="hover-fader"></div>
-                    </div>
-                    <div class="statement-content-box">
-                      <h3 aria-label="account login button" class="statement-card-statement">Photography</h3>
-                    </div>
-                    <div class="services-image-appear is_more-left"><img src="wp-content/uploads/2025/06/6846db5283afc3e35033bbd4_image20548.webp" loading="lazy" alt="" class="" data-img="i317f733b" srcset="https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bbd4_image20548-300x200.webp 300w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bbd4_image20548-1024x682.webp 1024w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bbd4_image20548-768x511.webp 768w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bbd4_image20548.webp 1164w">
-                      <p class="service-appear-text text-tagline">Photography</p>
-                    </div>
-                  </a>
-                </div><div role="listitem" class="w-dyn-item">
-                  <a data-w-id="622ba8c8-e33f-e39f-c6c0-316b14ba9cb3" href="wf-services/seo/index.html" class="services-card w-inline-block">
-                    <div class="services-hover-loader-container">
-                      <div class="services-hover-loader-inner"></div>
-                      <div class="hover-fader is_left"></div>
-                      <div class="hover-fader"></div>
-                    </div>
-                    <div class="statement-content-box">
-                      <h3 aria-label="account login button" class="statement-card-statement">SEO</h3>
-                    </div>
-                    <div class="services-image-appear is_more-left"><img src="wp-content/uploads/2025/06/6846db5283afc3e35033bba3_ibevip20arena20dubai20by20mohamad20k.webp" loading="lazy" alt="" class="" data-img="i317f733b" srcset="https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bba3_ibevip20arena20dubai20by20mohamad20k-300x225.webp 300w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bba3_ibevip20arena20dubai20by20mohamad20k-1024x768.webp 1024w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bba3_ibevip20arena20dubai20by20mohamad20k-768x576.webp 768w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bba3_ibevip20arena20dubai20by20mohamad20k.webp 1500w">
-                      <p class="service-appear-text text-tagline">SEO (Search Engine Optimisation)</p>
-                    </div>
-                  </a>
-                </div><div role="listitem" class="w-dyn-item">
-                  <a data-w-id="622ba8c8-e33f-e39f-c6c0-316b14ba9cb3" href="wf-services/ui-ux-design/index.html" class="services-card w-inline-block">
-                    <div class="services-hover-loader-container">
-                      <div class="services-hover-loader-inner"></div>
-                      <div class="hover-fader is_left"></div>
-                      <div class="hover-fader"></div>
-                    </div>
-                    <div class="statement-content-box">
-                      <h3 aria-label="account login button" class="statement-card-statement">UI/UX Design</h3>
-                    </div>
-                    <div class="services-image-appear is_more-left"><img src="wp-content/uploads/2025/06/6846db5283afc3e35033bba4_bevip20arena20dubai20by20mohamad20kamay20marralisa20branding20website20design20and20ux2020iphone201620pro.webp" loading="lazy" alt="" class="" data-img="i317f733b" srcset="https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bba4_bevip20arena20dubai20by20mohamad20kamay20marralisa20branding20website20design20and20ux2020iphone201620pro-300x225.webp 300w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bba4_bevip20arena20dubai20by20mohamad20kamay20marralisa20branding20website20design20and20ux2020iphone201620pro-1024x768.webp 1024w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bba4_bevip20arena20dubai20by20mohamad20kamay20marralisa20branding20website20design20and20ux2020iphone201620pro-768x576.webp 768w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bba4_bevip20arena20dubai20by20mohamad20kamay20marralisa20branding20website20design20and20ux2020iphone201620pro.webp 1500w">
-                      <p class="service-appear-text text-tagline">UI/UX Design Services</p>
-                    </div>
-                  </a>
-                </div><div role="listitem" class="w-dyn-item">
-                  <a data-w-id="622ba8c8-e33f-e39f-c6c0-316b14ba9cb3" href="wf-services/web-design/index.html" class="services-card w-inline-block">
-                    <div class="services-hover-loader-container">
-                      <div class="services-hover-loader-inner"></div>
-                      <div class="hover-fader is_left"></div>
-                      <div class="hover-fader"></div>
-                    </div>
-                    <div class="statement-content-box">
-                      <h3 aria-label="account login button" class="statement-card-statement">Web Design</h3>
-                    </div>
-                    <div class="services-image-appear is_more-left"><img src="wp-content/uploads/2025/06/6846db5283afc3e35033bb88_image20364.jpg" loading="lazy" alt="" class="" data-img="i317f733b" srcset="https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bb88_image20364-300x225.jpeg 300w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bb88_image20364-1024x769.jpeg 1024w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bb88_image20364-768x577.jpeg 768w, https://viralistic.nl/wp-content/uploads/2025/06/6846db5283afc3e35033bb88_image20364.jpeg 1046w">
-                      <p class="service-appear-text text-tagline">Web Design Services</p>
-                    </div>
-                  </a>
-                </div>              </div>
-                          </div>
-           </div>
+        <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); grid-gap: 20px; padding: 40px;">
+          <div class="service-card" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); border-radius: 10px; padding: 20px; border: 1px solid rgba(255, 255, 255, 0.2);">
+            <h3>Branding</h3>
+            <p>Branding and Identity</p>
+          </div>
+          <div class="service-card" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); border-radius: 10px; padding: 20px; border: 1px solid rgba(255, 255, 255, 0.2);">
+            <h3>E-Commerce</h3>
+            <p>E-commerce Web Design</p>
+          </div>
+          <div class="service-card" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); border-radius: 10px; padding: 20px; border: 1px solid rgba(255, 255, 255, 0.2);">
+            <h3>Lightning fast webdesign</h3>
+            <p>Lightning fast WebFlow design - Same day delivery</p>
+          </div>
+          <div class="service-card" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); border-radius: 10px; padding: 20px; border: 1px solid rgba(255, 255, 255, 0.2);">
+            <h3>Photography</h3>
+            <p>Photography</p>
+          </div>
+          <div class="service-card" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); border-radius: 10px; padding: 20px; border: 1px solid rgba(255, 255, 255, 0.2);">
+            <h3>SEO</h3>
+            <p>SEO (Search Engine Optimisation)</p>
+          </div>
+          <div class="service-card" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); border-radius: 10px; padding: 20px; border: 1px solid rgba(255, 255, 255, 0.2);">
+            <h3>UI/UX Design</h3>
+            <p>UI/UX Design Services</p>
+          </div>
+          <div class="service-card" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); border-radius: 10px; padding: 20px; border: 1px solid rgba(255, 255, 255, 0.2);">
+            <h3>Web Design</h3>
+            <p>Web Design Services</p>
+          </div>
         </div>
-        <div class="h-5vh"></div>
         <div class="container flex-verti-ss">
           <a href="our-services/index.html" class="new-button-outer w-inline-block" sym="true" data-link="a-7282a641">
             <div class="nbo-content">
@@ -741,7 +651,6 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
             </div>
           </a>
         </div>
-        <div class="h-10vh"></div>
       </section>
       <section class="stats-section section">
         <div class="container stats-container mob-vert">
@@ -754,34 +663,23 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
             <div class="stats-card flex-verti-st-end"></div>
           </div>
         </div>
-        <div class="line-fade is_ignore-paddng"></div>
-        <div class="container stats-container">
-          <div class="col">
-            <div class="stats-card">
-              <div class="line-fade is-vertical left mid"></div>
-              <div class="line-fade is-vertical left"></div>
-              <div class="wrapper flex-verti-ss">
-                <div class="stats title" data-text="t70da2bac">Marketing costs</div>
-                <div id="countup" class="stats is_result" data-text="t154db9">-87%</div>
-              </div><img src="wp-content/themes/viralistic-live30/assets/images/marketing-costs.svg" loading="lazy" alt="A graph showing growth in marketing" class="stats-graph" data-img="in3a417285" srcset="">
-              <div class="noise"></div>
-            </div>
+        <div class="container stats-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); grid-gap: 20px; padding: 40px;">
+          <div class="stats-card" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); border-radius: 10px; padding: 20px; border: 1px solid rgba(255, 255, 255, 0.2);">
+            <div class="stats title" data-text="t70da2bac">Marketing costs</div>
+            <div id="countup" class="stats is_result" data-text="t154db9">-87%</div>
+            <img src="wp-content/themes/viralistic-live30/assets/images/marketing-costs.svg" loading="lazy" alt="A graph showing growth in marketing" class="stats-graph" data-img="in3a417285" srcset="">
           </div>
-          <div class="col wid-less">
-            <div class="stats-card">
-              <div class="stats title is_smaller" data-text="t424b576a">Impressions</div>
-              <div class="stats is_result is_smaller" data-text="t275f243">+360%</div><img src="wp-content/themes/viralistic-live30/assets/images/impressions.svg" loading="lazy" data-w-id="9d539338-d6d8-7781-4fee-46b787a5fc42" alt="A graph showing growth in marketing" class="stats-graph" data-img="in65a7415a" srcset="">
-              <div class="noise"></div>
-            </div>
-            <div class="line-fade"></div>
-            <div class="stats-card">
-              <div class="line-fade is-vertical right"></div>
-              <div class="stats title is_smaller" data-text="t4fa12aba">NET&nbsp;sales value</div>
-              <div class="stats is_result is_smaller" data-text="t2757add">+256%</div><img src="wp-content/themes/viralistic-live30/assets/images/net-sales-value.svg" loading="lazy" alt="A graph showing growth in marketing" class="stats-graph" data-img="i2ea4ae5c" srcset="">
-            </div>
+          <div class="stats-card" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); border-radius: 10px; padding: 20px; border: 1px solid rgba(255, 255, 255, 0.2);">
+            <div class="stats title is_smaller" data-text="t424b576a">Impressions</div>
+            <div class="stats is_result is_smaller" data-text="t275f243">+360%</div>
+            <img src="wp-content/themes/viralistic-live30/assets/images/impressions.svg" loading="lazy" data-w-id="9d539338-d6d8-7781-4fee-46b787a5fc42" alt="A graph showing growth in marketing" class="stats-graph" data-img="in65a7415a" srcset="">
+          </div>
+          <div class="stats-card" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); border-radius: 10px; padding: 20px; border: 1px solid rgba(255, 255, 255, 0.2);">
+            <div class="stats title is_smaller" data-text="t4fa12aba">NET&nbsp;sales value</div>
+            <div class="stats is_result is_smaller" data-text="t2757add">+256%</div>
+            <img src="wp-content/themes/viralistic-live30/assets/images/net-sales-value.svg" loading="lazy" alt="A graph showing growth in marketing" class="stats-graph" data-img="i2ea4ae5c" srcset="">
           </div>
         </div>
-        <div class="line-fade is_ignore-paddng"></div>
         <div class="h-10vh"></div>
       </section>
       <section class="section-strong section is-shows_in_section-above" sym="true">
@@ -789,11 +687,15 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
           <h2 class="content-heading font-center" data-text="tn55e8999a">You are in the right place</h2>
         </div>
         <div class="h-40"></div>
-        <div data-w-id="0af22920-a045-0666-74d8-4fc12f9112f7" class="section-brands section">
-          <div class="logo-strip-wrapper-2">
-            <div class="logo-strip-2" sym="true"><img width="121" alt="The lake restaurant heerhugowaard logo" src="wp-content/themes/viralistic-live30/assets/images/the-lake.svg" loading="lazy" class="logo-image" data-img="i5165007b" srcset=""><img width="121" alt="Best western hotels logo" src="wp-content/themes/viralistic-live30/assets/images/best-western.svg" loading="lazy" class="logo-image" data-img="i79e44d79" srcset=""><img width="121" alt="Mart visser haute couture logo" src="wp-content/themes/viralistic-live30/assets/images/mart-visser.svg" loading="lazy" class="logo-image" data-img="in5511d84d" srcset=""><img width="121" alt="bold-lynk logo" src="wp-content/themes/viralistic-live30/assets/images/bold-lynk.svg" loading="lazy" class="logo-image" data-img="in35130512" srcset=""><img width="121" alt="Volvo logo" src="wp-content/themes/viralistic-live30/assets/images/volvo.svg" loading="lazy" class="logo-image" data-img="in3c2f7e98" srcset=""><img width="121" alt="Binni Logo" src="wp-content/themes/viralistic-live30/assets/images/binni.svg" loading="lazy" class="logo-image" data-img="i1b01ec9e" srcset=""><img width="121" alt="Louvre logo" src="wp-content/themes/viralistic-live30/assets/images/louvre.svg" loading="lazy" class="logo-image" data-img="in25adfbd9" srcset=""><img width="121" alt="Lamborghini logo" src="wp-content/themes/viralistic-live30/assets/images/lamborghini.svg" loading="lazy" class="logo-image" data-img="ie7efb72" srcset=""></div>
-            <div class="logo-strip-2" sym="true"><img width="121" alt="The lake restaurant heerhugowaard logo" src="wp-content/themes/viralistic-live30/assets/images/the-lake.svg" loading="lazy" class="logo-image" data-img="i5165007b" srcset=""><img width="121" alt="Best western hotels logo" src="wp-content/themes/viralistic-live30/assets/images/best-western.svg" loading="lazy" class="logo-image" data-img="i79e44d79" srcset=""><img width="121" alt="Mart visser haute couture logo" src="wp-content/themes/viralistic-live30/assets/images/mart-visser.svg" loading="lazy" class="logo-image" data-img="in5511d84d" srcset=""><img width="121" alt="bold-lynk logo" src="wp-content/themes/viralistic-live30/assets/images/bold-lynk.svg" loading="lazy" class="logo-image" data-img="in35130512" srcset=""><img width="121" alt="Volvo logo" src="wp-content/themes/viralistic-live30/assets/images/volvo.svg" loading="lazy" class="logo-image" data-img="in3c2f7e98" srcset=""><img width="121" alt="Binni Logo" src="wp-content/themes/viralistic-live30/assets/images/binni.svg" loading="lazy" class="logo-image" data-img="i1b01ec9e" srcset=""><img width="121" alt="Louvre logo" src="wp-content/themes/viralistic-live30/assets/images/louvre.svg" loading="lazy" class="logo-image" data-img="in25adfbd9" srcset=""><img width="121" alt="Lamborghini logo" src="wp-content/themes/viralistic-live30/assets/images/lamborghini.svg" loading="lazy" class="logo-image" data-img="ie7efb72" srcset=""></div>
-          </div>
+        <div class="logo-strip" style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; padding: 40px 0;">
+          <img width="121" alt="The lake restaurant heerhugowaard logo" src="wp-content/themes/viralistic-live30/assets/images/the-lake.svg" loading="lazy" class="logo-image" data-img="i5165007b" srcset="" style="margin: 20px;">
+          <img width="121" alt="Best western hotels logo" src="wp-content/themes/viralistic-live30/assets/images/best-western.svg" loading="lazy" class="logo-image" data-img="i79e44d79" srcset="" style="margin: 20px;">
+          <img width="121" alt="Mart visser haute couture logo" src="wp-content/themes/viralistic-live30/assets/images/mart-visser.svg" loading="lazy" class="logo-image" data-img="in5511d84d" srcset="" style="margin: 20px;">
+          <img width="121" alt="bold-lynk logo" src="wp-content/themes/viralistic-live30/assets/images/bold-lynk.svg" loading="lazy" class="logo-image" data-img="in35130512" srcset="" style="margin: 20px;">
+          <img width="121" alt="Volvo logo" src="wp-content/themes/viralistic-live30/assets/images/volvo.svg" loading="lazy" class="logo-image" data-img="in3c2f7e98" srcset="" style="margin: 20px;">
+          <img width="121" alt="Binni Logo" src="wp-content/themes/viralistic-live30/assets/images/binni.svg" loading="lazy" class="logo-image" data-img="i1b01ec9e" srcset="" style="margin: 20px;">
+          <img width="121" alt="Louvre logo" src="wp-content/themes/viralistic-live30/assets/images/louvre.svg" loading="lazy" class="logo-image" data-img="in25adfbd9" srcset="" style="margin: 20px;">
+          <img width="121" alt="Lamborghini logo" src="wp-content/themes/viralistic-live30/assets/images/lamborghini.svg" loading="lazy" class="logo-image" data-img="ie7efb72" srcset="" style="margin: 20px;">
         </div>
         <div class="h-40"></div>
         <div class="strong-section-upper is-bottom">
@@ -824,78 +726,75 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
           </a>
         </div>
       </section>
-      <section class="section_horiz-gal">
+      <section class="cases-section" style="padding: 40px 0;">
         <div class="w-embed">
           <style>
-/* ALL PAGES CSS */
-/* Desktop Only CSS (i.e. hover states) */
-@media only screen and (min-width: 992px) {
-}
-/* Main Variables */
-:root {
-  --main-dark: black;
-  --main-light: white;
-}
-/* Global Styles */
-::selection {
-	background: var(--main-dark);
-  color: var(--main-light);
-  text-shadow: none;
-}
-img::selection, svg::selection {
-	background: transparent;
-}
-/* Link color inherits from parent font color  
-a {
-	color: inherit;
-}
-*/
-/* Disable / enable clicking on an element and its children  */
-.no-click {
-	pointer-events: none;
-}
-.can-click {
-	pointer-events: auto;
-}
-/* Target any element with a certain "word" in the class name  */
-[class*="spacer"] {
-}
-</style>
+            .cases-grid {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+              grid-gap: 20px;
+            }
+            .case-card {
+              position: relative;
+              overflow: hidden;
+              border-radius: 10px;
+            }
+            .case-card img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.3s ease;
+            }
+            .case-card:hover img {
+              transform: scale(1.1);
+            }
+            .case-card .overlay {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+              color: white;
+              padding: 20px;
+            }
+          </style>
         </div>
-        <div class="container-horizontal-gal no-min-height"></div>
-        <div class="container-horizontal-gal">
-          <div class="tricks-slider">
-            <div class="tricks-slider_slide"><img sizes="(max-width: 1200px) 100vw, 1200px" srcset="https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/bmw-silverdrive-viralistic-14-p-500.webp 500w, https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/bmw-silverdrive-viralistic-14-p-800.webp 800w, https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/bmw-silverdrive-viralistic-14-p-1080.webp 1080w, https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/bmw-silverdrive-viralistic-14.webp 1200w, " alt="" src="wp-content/themes/viralistic-live30/assets/images/bmw-silverdrive-viralistic-14.webp" loading="lazy" class="image_slider" data-img="in2896b241">
-              <a href="wf-projects/silverdrive/index.html" class="slider-link w-inline-block" data-link="a-351bcc2b"></a>
-              <p class="tricks-slider_text" data-text="tn73bfa1a3">SilverDrive</p>
-            </div>
-            <div class="tricks-slider_slide"><img loading="lazy" src="wp-content/themes/viralistic-live30/assets/images/house_of_mart_shotby_viralistic-5252.jpg" alt="" class="image_slider" data-img="i76f0054c" srcset="">
-              <a href="wf-projects/louvre/index.html" class="slider-link w-inline-block" data-link="a-98cda0b"></a>
-              <p class="tricks-slider_text" data-text="tn595ac736">Mart Visser</p>
-            </div>
-            <div class="tricks-slider_slide"><img sizes="(max-width: 1500px) 100vw, 1500px" srcset="https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/iphone-16-pro-p-500.webp 500w, https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/iphone-16-pro-p-800.webp 800w, https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/iphone-16-pro-p-1080.webp 1080w, https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/iphone-16-pro.webp 1500w, " alt="" src="wp-content/themes/viralistic-live30/assets/images/iphone-16-pro.webp" loading="lazy" class="image_slider" data-img="i4f3e7357">
-              <a href="wf-projects/julia-clinics/index.html" class="slider-link w-inline-block" data-link="a-1ceaa325"></a>
-              <p class="tricks-slider_text" data-text="t939">JC</p>
-            </div>
-            <div class="tricks-slider_slide"><img sizes="(max-width: 1500px) 100vw, 1500px" srcset="https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/r-mockups-macbook-air-15-inch-1-p-500.webp 500w, https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/r-mockups-macbook-air-15-inch-1-p-800.webp 800w, https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/r-mockups-macbook-air-15-inch-1-p-1080.webp 1080w, https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/recommerce-website-eriona-sejdiu-kosova.webp 1500w, " alt="A picture of louvre website design" src="wp-content/themes/viralistic-live30/assets/images/recommerce-website-eriona-sejdiu-kosova.webp" loading="lazy" class="image_slider" data-img="i45be013a">
-              <a href="wf-projects/louvre/index.html" class="slider-link w-inline-block" data-link="a-98cda0b"></a>
-              <p class="tricks-slider_text" data-text="tn77fc8749">Louvre</p>
-            </div>
-            <div class="tricks-slider_slide"><img sizes="(max-width: 993px) 100vw, 993px" srcset="https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/quantlinkai-webdesign-project-p-500.png 500w, https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/quantlinkai-webdesign-project-p-800.png 800w, https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/quantlinkai-webdesign-project.png 993w, " alt="" src="wp-content/themes/viralistic-live30/assets/images/quantlinkai-webdesign-project.png" loading="lazy" class="image_slider" data-img="in17726569">
-              <a href="wf-projects/quantlink/index.html" class="slider-link w-inline-block" data-link="a2016eb75"></a>
-              <p class="tricks-slider_text" data-text="t31177f9d">Quantlink</p>
-            </div>
-            <div class="tricks-slider_slide"><img sizes="(max-width: 1500px) 100vw, 1500px" srcset="https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/new-records-techno-event-amsterdam-branding-bvge-iphone-15-pro-p-500.webp 500w, https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/new-records-techno-event-amsterdam-branding-bvge-iphone-15-pro-p-800.webp 800w, https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/new-records-techno-event-amsterdam-branding-bvge-iphone-15-pro-p-1080.webp 1080w, https://viralistic.nl/wp-content/themes/viralistic-live30/assets/images/new-records-techno-event-amsterdam-branding-bvge-iphone-15-pro.webp 1500w, " alt="" src="wp-content/themes/viralistic-live30/assets/images/new-records-techno-event-amsterdam-branding-bvge-iphone-15-pro.webp" loading="lazy" class="image_slider" data-img="in362187eb">
-              <a href="wf-projects/new-records/index.html" class="slider-link w-inline-block" data-link="a1d605e5d"></a>
-              <p class="tricks-slider_text" data-text="t4a5d0382">New Records</p>
-            </div>
-            <div class="tricks-slider_slide"><img loading="lazy" src="wp-content/themes/viralistic-live30/assets/images/giphy-5.gif" alt="" class="image_slider is-last" data-img="i4d170843" srcset="">
-              <a href="portfolio/index.html" class="slider-link is_last w-inline-block" data-link="a42dd0548"></a>
-              <p class="tricks-slider_text" data-text="t4b09c9c6">View all</p>
+        <div class="cases-grid">
+          <div class="case-card">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f29?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="">
+            <div class="overlay">
+              <h3>SilverDrive</h3>
             </div>
           </div>
-          <div class="progress">
-            <div class="progress_fill"></div>
+          <div class="case-card">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f29?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="">
+            <div class="overlay">
+              <h3>Mart Visser</h3>
+            </div>
+          </div>
+          <div class="case-card">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f29?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="">
+            <div class="overlay">
+              <h3>JC</h3>
+            </div>
+          </div>
+          <div class="case-card">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f29?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="">
+            <div class="overlay">
+              <h3>Louvre</h3>
+            </div>
+          </div>
+          <div class="case-card">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f29?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="">
+            <div class="overlay">
+              <h3>Quantlink</h3>
+            </div>
+          </div>
+          <div class="case-card">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f29?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="">
+            <div class="overlay">
+              <h3>New Records</h3>
+            </div>
           </div>
         </div>
       </section>
@@ -946,91 +845,31 @@ a {
         </div>
       </section>
     </main>
-    <footer class="footer-section section" sym="true">
-      <div class="h-20vh"></div>
-      <div data-w-id="b2bf859e-87f3-b5fc-be1a-77ded87b08de" class="strong-section-upper footer general-footer">
-        <div class="footer-cta-container container">
-          <div class="col footer-topcol">
-            <div class="circle-turn">
-              <div class="footer-cta-container">
-                <h2 class="footer-cta" data-textarea="ta29615e78"><span>Take control and grow</span></h2>
-                <a data-w-id="ee93e2ed-20ee-670e-d83f-1d707ea5e6f1" href="https://forms.fillout.com/t/3bdNKaGtotus" class="new-special-button w-inline-block" sym="true" data-link="af339cd9">
-                  <div class="nsb-wrapper">
-                    <div class="nsb-icon">
-                      <div class="nsb-blob"></div>
-                    </div>
-                    <div class="nsb-text" data-text="tn549e2c8c">Plan a call</div>
-                    <div class="nsb-gradient"></div>
-                  </div>
-                </a>
-              </div>
-              <div data-w-id="b2bf859e-87f3-b5fc-be1a-77ded87b08eb" class="circle-turn-cir"></div>
-              <div data-w-id="b2bf859e-87f3-b5fc-be1a-77ded87b08ec" class="circle-turn-cir is-2nd-circle"></div>
-              <div data-w-id="b2bf859e-87f3-b5fc-be1a-77ded87b08ed" class="circle-turn-cir is-3nd-circle"></div>
-              <div data-w-id="910cfc72-36f4-c39a-a4a3-642ecf539108" class="circle-turn-cir is-4nd-cirlce"></div>
-              <div data-w-id="b4b4f61f-8948-bf38-f035-435e8aa9d67e" class="circle-turn-cir is-3nd-circle is-5nd-circle"></div>
-            </div>
-          </div>
-        </div>
-        <div class="h-10vh"></div>
-        <div class="footer-big-menu">
-          <div class="container">
-            <ul role="list" class="footer-nav footer-bg-nav">
-              <li class="footer-li">
-                <a data-w-id="b2bf859e-87f3-b5fc-be1a-77ded87b08f6" href="about-us/index.html" class="footer-link w-inline-block" data-link="a6084ccde">
-                  <h2 class="footer-heading-link" data-text="t3c2336d">About</h2>
-                  <div class="footer-hover-dot"></div>
-                </a>
-              </li>
-              <li class="footer-li">
-                <a data-w-id="ccb033d4-b727-e17a-b857-69aeebe43676" href="https://forms.fillout.com/t/3bdNKaGtotus" target="_blank" class="footer-link w-inline-block" data-link="af339cd9">
-                  <h2 class="footer-heading-link" data-text="t667a5d97">Get started</h2>
-                  <div class="footer-hover-dot"></div>
-                </a>
-              </li>
-              <li class="footer-li">
-                <a href="portfolio/index.html" class="footer-link w-inline-block" data-link="a42dd0548">
-                  <h2 class="footer-heading-link" data-text="t3ddfb23">Cases</h2>
-                  <div class="footer-hover-dot"></div>
-                </a>
-              </li>
-              <li class="footer-li">
-                <a data-w-id="b7e8422d-6ed0-de73-f541-103ce34cc50c" href="our-services/index.html" class="footer-link w-inline-block" data-link="a-7282a641">
-                  <h2 class="footer-heading-link" data-text="t560f747e">Services</h2>
-                  <div class="footer-hover-dot"></div>
-                </a>
-              </li>
-              <li class="footer-li">
-                <a data-w-id="33936e4b-78a2-c5be-871a-5062512cc4e7" href="contact/index.html" class="footer-link w-inline-block" data-link="a38b72420">
-                  <h2 class="footer-heading-link" data-text="tn64104400">Contact</h2>
-                  <div class="footer-hover-dot"></div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="h-20"></div>
-      <div data-w-id="b2bf859e-87f3-b5fc-be1a-77ded87b0906" class="container footer-cont">
-        <div class="col flex-verti-cc">
-          <ul role="list" class="menu-list flex-horiz-dist-even">
-            <li>
-              <a href="https://www.google.com/maps/dir//Viralistic+Digital+Agency,+Herengracht+449a,+1017+BR+Amsterdam,+Netherlands/@52.3666451,4.8864898,17z/data=!4m17!1m7!3m6!1s0x47c609f9806330c5:0x3c13405a175e8ea!2sViralistic+Digital+Agency!8m2!3d52.3666451!4d4.8890647!16s%2Fg%2F11tcjc2jly!4m8!1m0!1m5!1m1!1s0x47c609f9806330c5:0x3c13405a175e8ea!2m2!1d4.8890647!2d52.3666451!3e9?entry=ttu&amp;g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-footer w-button" data-text="tn2b14f2c2" data-link="a-8168c13">Herengracht 551 Amsterdam, Netherlands</a>
-            </li>
-          </ul>
-        </div>
+    <footer class="footer-section section" sym="true" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); border-top: 1px solid rgba(255, 255, 255, 0.2); padding: 40px 0; color: white;">
+      <div class="container footer-cont" style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
         <div class="col flex-verti-cc">
           <a href="#" class="homepage w-inline-block" data-link="a23"><img src="wp-content/themes/viralistic-live30/assets/images/logo.svg" loading="lazy" alt="Logo viralistic digital agency amsterdam" class="viralistic-logo-footer" data-img="in2a484e45" srcset=""></a>
         </div>
-        <div class="col flex-verti-cc mob-hide">
+        <div class="col flex-verti-cc">
           <ul role="list" class="menu-list flex-horiz-dist-even">
             <li>
-              <a href="index.html" target="_blank" class="btn-footer w-button" data-text="t77eda892" data-link="a-4426f3b4">@2025 Copyright Viralistic</a>
+              <a href="about-us/index.html" class="btn-footer w-button">About</a>
+            </li>
+            <li>
+              <a href="portfolio/index.html" class="btn-footer w-button">Cases</a>
+            </li>
+            <li>
+              <a href="our-services/index.html" class="btn-footer w-button">Services</a>
+            </li>
+            <li>
+              <a href="contact/index.html" class="btn-footer w-button">Contact</a>
             </li>
           </ul>
         </div>
+        <div class="col flex-verti-cc">
+          <p>&copy; 2025 Viralistic. All rights reserved.</p>
+        </div>
       </div>
-      <div class="h-20"></div>
     </footer>
   </div>
   
@@ -1109,6 +948,8 @@ transition: opacity 0.2s ease;
 }
 </style>
 <script src="../unpkg.com/flickity%402.3.0/dist/flickity.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 <script>
 let mainCarousel = ".tricks-slider";
 let mainSlides = ".tricks-slider_slide";
@@ -1159,6 +1000,76 @@ setImagePositions();
 	document.querySelectorAll('form[data-ajax-action="contact"] select[multiple]').forEach( select => {
 		select.name = select.name + "[]";
 	})
+</script>
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".parallax-layer", {
+  scrollTrigger: {
+    trigger: "#parallax-container",
+    start: "top top",
+    end: "bottom top",
+    scrub: true,
+  },
+  y: (i, target) => -ScrollTrigger.maxScroll(window) * target.dataset.depth,
+  ease: "none",
+});
+
+gsap.utils.toArray(".feature-card").forEach(card => {
+  gsap.from(card, {
+    scrollTrigger: {
+      trigger: card,
+      start: "top 80%",
+      end: "bottom 20%",
+      toggleActions: "play none none reverse",
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+  });
+});
+
+gsap.utils.toArray(".service-card").forEach(card => {
+  gsap.from(card, {
+    scrollTrigger: {
+      trigger: card,
+      start: "top 80%",
+      end: "bottom 20%",
+      toggleActions: "play none none reverse",
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+  });
+});
+
+gsap.utils.toArray(".stats-card").forEach(card => {
+  gsap.from(card, {
+    scrollTrigger: {
+      trigger: card,
+      start: "top 80%",
+      end: "bottom 20%",
+      toggleActions: "play none none reverse",
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+  });
+});
+
+gsap.utils.toArray(".case-card").forEach(card => {
+  gsap.from(card, {
+    scrollTrigger: {
+      trigger: card,
+      start: "top 80%",
+      end: "bottom 20%",
+      toggleActions: "play none none reverse",
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+  });
+});
 </script>
 	<script id="udesly-frontend-js-extra">
 var udesly_frontend_options = {"plugins":{"woocommerce":false},"wp":{"ajax_url":"https:\/\/viralistic.nl\/wp-admin\/admin-ajax.php","lifespan":86400}};

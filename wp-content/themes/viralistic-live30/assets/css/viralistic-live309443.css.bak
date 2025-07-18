@@ -1,3 +1,260 @@
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-semibold.woff2') format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-thin.woff2') format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-lightitalic.woff2') format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-regularitalic.woff2') format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-extralight.woff2') format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-semibolditalic.woff2') format("woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-thinitalic.woff2') format("woff2");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-light.woff2') format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-bolditalic.woff2') format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-extralightitalic.woff2') format("woff2");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-regular.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Safiro Webfont;
+  src: url('../fonts/safiro-semibold-webfont.woff2') format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Safiro Webfont;
+  src: url('../fonts/safiro-bold-webfont.woff2') format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Safiro Webfont;
+  src: url('../fonts/safiro-regular-webfont.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Safiro Webfont;
+  src: url('../fonts/safiro-regularitalic-webfont.woff2') format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Safiro Webfont;
+  src: url('../fonts/safiro-mediumitalic-webfont.woff2') format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Safiro Webfont;
+  src: url('../fonts/safiro-bolditalic-webfont.woff2') format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Safiro Webfont;
+  src: url('../fonts/safiro-medium-webfont.woff2') format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Safiro Webfont;
+  src: url('../fonts/safiro-semibolditalic-webfont.woff2') format("woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --bg-darker: #0a0a0b;
+  --white: #fff;
+  --bgp-light: #4b88ff;
+  --padding-m: 20px;
+  --bg-dark: #1c1d1f;
+  --bg-base: #232426;
+  --bgp-lighter: #d9e6ff;
+  --padding-l: 40px;
+  --border-radius-m: 7px;
+  --line-color: #ffffff21;
+  --gap-m: 20px;
+  --bgp-dark: #1133b6;
+  --bgp-base: #0047ff;
+  --radius-l: 50px;
+  --border-radius-xs: 5px;
+  --emphasis: #a0c0ff;
+  --paragraph: #ffffffb5;
+  --paragraph-color: #ffffffb5;@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-semibold.woff2') format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-thin.woff2') format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-lightitalic.woff2') format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-regularitalic.woff2') format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-extralight.woff2') format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-semibolditalic.woff2') format("woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-thinitalic.woff2') format("woff2");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-light.woff2') format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-bolditalic.woff2') format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-extralightitalic.woff2') format("woff2");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gottak;
+  src: url('../fonts/gottak-regular.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: Safiro Webfont;
@@ -67,9 +324,9 @@
   --white: #f5f5f7;
 
   /* 🔥 Accent color */
-  --bgp-dark: #00ffe1;
-  --bgp-base: #00ffe1;
-  --bgp-light: #00ffe1;
+  --bgp-dark: #f63801;
+  --bgp-base: #f63801;
+  --bgp-light: #ff6a00;
   --bgp-lighter: #ffffff;
 
   /* 🖤 Dark background layers */
@@ -147,69 +404,78 @@
   display: grid;
 }
 
+body {
+  background-color: var(--bg-darker);
+  color: #333;
+  font-family: Gottak, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  transition: all .4s;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("https://images.wallpapersden.com/image/download/flowing-abstract-shapes-4k-art_bWZpaGqUmZqaraWkpJRrZWVlrWllZWU.jpg");
+}
+
 h1 {
-  color: #ffffff;
+  color: var(--white);
   max-width: 23ch;
   margin-top: 20px;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  font-family: 'Satoshi', sans-serif;
-  font-size: 96px;
-  font-weight: 900;
+  font-family: Gottak, Arial, sans-serif;
+  font-size: 60px;
+  font-weight: 200;
   line-height: 1.2;
 }
 
 h2 {
-  color: #ffffff;
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: 'Satoshi', sans-serif;
-  font-size: 64px;
-  font-weight: 700;
+  font-family: Gottak, Arial, sans-serif;
+  font-size: 45px;
+  font-weight: 300;
   line-height: 1.2;
 }
 
 h3 {
-  color: #ffffff;
   margin-top: 0;
   margin-bottom: 10px;
-  font-family: 'Satoshi', sans-serif;
+  font-family: Gottak, Arial, sans-serif;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 200;
   line-height: 1.2;
 }
 
 h4 {
-  color: #ffffff;
+  color: var(--bgp-light);
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: Euclid Circular B;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
 }
 
 h5 {
-  color: #ffffff;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: Panamera Bold;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
 }
 
 p {
-  color: #ffffff;
   margin-bottom: 10px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: Safiro Webfont, Arial, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
 }
 
 a {
-  color: #ffffff;
+  color: var(--white);
   white-space: nowrap;
   cursor: pointer;
   text-decoration: none;
@@ -597,9 +863,6 @@ blockquote {
 .header {
   z-index: 100;
   position: relative;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .hero-section.section.z-1 {
@@ -841,11 +1104,9 @@ blockquote {
   padding: var(--padding-m);
   grid-column-gap: var(--gap-m);
   grid-row-gap: var(--gap-m);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--bg-base);
   border-radius: var(--border-radius-m);
   display: flex;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
 }
 
 .statement-card.text-light {
@@ -993,7 +1254,7 @@ blockquote {
 .button-outer {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #ebebe5;
   border-radius: 30px;
   flex-flow: row;
   justify-content: center;
@@ -1003,8 +1264,6 @@ blockquote {
   padding-left: 20px;
   padding-right: 0;
   display: flex;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .button-outer.is-outline {
@@ -1114,6 +1373,43 @@ blockquote {
   display: flex;
 }
 
+.strong-section-upper {
+background-image: linear-gradient(180deg, var(--bg-darker), #2e2e2e00 49%), radial-gradient(circle farthest-corner at 50% 100%, #0000003d, #36363600 63%), radial-gradient(circle farthest-corner at 100% 100%, #ffffff03, #0000 39%), linear-gradient(180deg, #0000 70%, #00000000), radial-gradient(circle farthest-corner at 55% 0%, #0e0e0f, #2e2e2e00), linear-gradient(180deg, var(--bgp-dark), #d8590252 62%, #000000b3), url(../images/giphy-1.gif);  background-size: auto, auto, auto, auto, auto, auto, auto, cover;
+  background-size: auto, auto, auto, auto, auto, auto, cover;
+  background-attachment: scroll, scroll, scroll, scroll, scroll, scroll, scroll;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  height: 60vh;
+  display: flex;
+      background-size: cover;
+
+}
+
+.strong-section-upper.is-bottom {
+background-image: linear-gradient(180deg, var(--bg-darker), #2e2e2e00 49%), radial-gradient(circle farthest-corner at 50% 100%, #0000003d, #36363600 63%), radial-gradient(circle farthest-corner at 100% 100%, #ffffff03, #0000 39%), linear-gradient(180deg, #0000 70%, #00000000), radial-gradient(circle farthest-corner at 55% 0%, #0e0e0f, #2e2e2e00), linear-gradient(180deg, var(--bgp-dark), #d8590252 62%, #000000b3), url(../images/giphy-1.gif);  background-size: auto, auto, auto, auto, auto, auto, auto, cover;
+  background-size: auto, auto, auto, auto, auto, auto, auto, cover;
+  background-attachment: scroll, scroll, scroll, scroll, scroll, scroll, scroll, scroll;
+  transform: rotate(180deg);
+      background-size: cover;
+
+}
+
+.strong-section-upper.footer {
+background-image: linear-gradient(180deg, var(--bg-darker), #2e2e2e00 49%), radial-gradient(circle farthest-corner at 50% 100%, #0000003d, #36363600 63%), radial-gradient(circle farthest-corner at 100% 100%, #ffffff03, #0000 39%), linear-gradient(180deg, #0000 70%, #00000000), radial-gradient(circle farthest-corner at 55% 0%, #0e0e0f, #2e2e2e00), linear-gradient(180deg, var(--bgp-dark), #d8590252 62%, #000000b3), url(../images/giphy-1.gif);  background-size: auto, auto, auto, auto, auto, auto, auto, cover;
+  position: relative;
+    background-size: cover;
+
+}
+
+.strong-section-upper.footer.general-footer {
+background-image: linear-gradient(180deg, var(--bg-darker), #2e2e2e00 49%), radial-gradient(circle farthest-corner at 50% 100%, #0000003d, #36363600 63%), radial-gradient(circle farthest-corner at 100% 100%, #ffffff03, #0000 39%), linear-gradient(180deg, #0000 70%, #00000000), radial-gradient(circle farthest-corner at 55% 0%, #0e0e0f, #2e2e2e00), linear-gradient(180deg, var(--bgp-dark), #d8590252 62%, #000000b3), url(../images/giphy-1.gif);  background-size: auto, auto, auto, auto, auto, auto, auto, cover;
+  background-attachment: scroll, scroll, scroll, scroll, scroll, scroll, scroll, scroll;
+  background-size: cover;
+}
 
 .footer-section.section {
   background-color: var(--bg-darker);
@@ -1188,6 +1484,55 @@ blockquote {
   opacity: 100;
 }
 
+.circle-turn {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  transform: rotate(0);
+}
+
+.circle-turn-cir {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: var(--white);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: var(--white);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: var(--white);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: var(--white);
+  opacity: .8;
+  border-radius: 100%;
+  width: 99vw;
+  height: 35vw;
+  position: absolute;
+  transform: rotate(0);
+}
+
+.circle-turn-cir.is-2nd-circle {
+  opacity: .5;
+  transform-style: preserve-3d;
+  transform: rotateX(0)rotateY(-20deg)rotateZ(0);
+}
+
+.circle-turn-cir.is-3nd-circle {
+  opacity: .35;
+  transform-style: preserve-3d;
+  transform: rotateX(0)rotateY(-30deg)rotateZ(0);
+}
+
+.circle-turn-cir.is-3nd-circle.is-5nd-circle {
+  opacity: .1;
+}
+
+.circle-turn-cir.is-4nd-cirlce {
+  opacity: .2;
+}
+
 .footer-heading-link {
   text-align: center;
   font-size: 32px;
@@ -1242,6 +1587,28 @@ blockquote {
   position: absolute;
   inset: auto 0% 0%;
   overflow: hidden;
+}
+
+.ovals {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  display: flex;
+  position: absolute;
+  inset: auto 0% 0%;
+}
+
+.oval {
+  border: 1px solid #ffffff30;
+  border-radius: 100%;
+  width: 160vw;
+  height: 100%;
+}
+
+.oval.is_lower {
+  position: absolute;
+  top: 15%;
 }
 
 .marked {
@@ -2272,7 +2639,7 @@ blockquote {
 }
 
 .services-hover-loader-container.filter-bw {
-  
+
 }
 
 .services-hover-loader-inner {
@@ -3656,6 +4023,21 @@ blockquote {
   text-decoration: underline;
 }
 
+.noise {
+  z-index: -1;
+  opacity: .04;
+  pointer-events: none;
+  background-image: url('../images/viralistic-amsterdam.gif');
+  background-position: 0 0;
+  background-size: 500px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: block;
+  position: fixed;
+  inset: 0%;
+}
+
 .body {
   background-color: #1c1d1f;
 }
@@ -4196,7 +4578,140 @@ blockquote {
   overflow: hidden;
 }
 
+.moving-blocks-wrapper {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  inset: 0%;
+  left:250px;
+  bottom: 250px;
+}
 
+.moving-blocks-canvas {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+
+}
+
+.mbc-wrapper {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  height: 200vh;
+  display: flex;
+}
+
+.mb-block {
+  background-image: linear-gradient(180deg, var(--bg-darker), #20202000 77%), linear-gradient(180deg, #0a0a0bed 46%, #25252500 84%), radial-gradient(circle farthest-corner at 50% 80%, black, #20202000 83%), linear-gradient(180deg, #0000 95%, #fffbb6d1), linear-gradient(180deg, #0000 89%, #0047ff5c), linear-gradient(180deg, #0000 73%, var(--emphasis)), url('../images/giphy-5.gif'), linear-gradient(90deg, var(--emphasis), #0a0a0b00 57%, var(--emphasis)), linear-gradient(180deg, var(--bg-darker), var(--bg-base) 81%, var(--emphasis));
+  background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+  background-size: auto, auto, auto, auto, auto, auto, cover, auto, auto;
+  width: 100%;
+  height: 40%;
+  box-shadow: inset 0 2px 40px #fff3;
+}
+
+.mb-block.is_glow {
+  z-index: 2;
+  background-image: linear-gradient(86deg, var(--bg-darker), #1b1b1b00 78%), linear-gradient(180deg, var(--bg-darker), #20202000 77%), linear-gradient(180deg, #0a0a0bed 46%, #25252500 84%), radial-gradient(circle farthest-corner at 50% 80%, black, #20202000 83%), linear-gradient(180deg, #0000 95%, #fffbb6d1), linear-gradient(180deg, #0000 89%, #0047ff5c), linear-gradient(180deg, #0000 73%, var(--emphasis)), url('../images/giphy-5.gif'), linear-gradient(90deg, var(--emphasis), #0a0a0b00 57%, var(--emphasis)), linear-gradient(180deg, var(--bg-darker), var(--bg-base) 81%, var(--emphasis));
+  background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+  background-size: auto, auto, auto, auto, auto, auto, auto, cover, auto, auto;
+}
+
+.mb-glow {
+  z-index: -10;
+  background-color: var(--emphasis);
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+.hero-grad {
+  background-image: radial-gradient(circle farthest-corner at 30% 40%, #4b88ff14, #0000 34%), linear-gradient(90deg, var(--bg-darker) 34%, #20202000), radial-gradient(circle farthest-corner at 50% 50%, #fff0 41%, var(--bg-darker) 72%);
+  position: absolute;
+  inset: 0%;
+}
+
+.featurs-sec.section {
+  z-index: 100;
+  margin-top: -30px;
+}
+
+.features-grid {
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-areas: "Area Area-2 Area-2"
+                       "Area Area-3 Area-4";
+  justify-items: stretch;
+  min-width: 100%;
+  height: 600px;
+}
+
+.feature-card {
+  border: 1px solid var(--line-color);
+  border-radius: var(--padding-m);
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card.flex-verti-ss {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  color: var(--white);
+  min-height: 100%;
+}
+
+.featured-card-number {
+  color: var(--bgp-light);
+  font-size: 20px;
+}
+
+.feature-card-shine {
+  background-color: var(--emphasis);
+  filter: blur(150px);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  inset: auto 0% 0% auto;
+}
+
+.featured-card-image {
+  z-index: -1;
+  min-height: 100%;
+  position: absolute;
+  inset: 0% 0% auto auto;
+}
+
+.featured-card-image._2nd {
+  object-fit: cover;
+  min-height: 100%;
+}
+
+.feature-grad {
+  background-image: linear-gradient(90deg, var(--bg-darker), #1a1a1a00 76%);
+  position: absolute;
+  inset: 0%;
+}
+
+.feature-grad.larger {
+  background-image: linear-gradient(90deg, var(--bg-darker), #1a1a1a00);
+}
+
+.feature-paragraph {
+  color: var(--paragraph);
+  font-size: 18px;
+}
+
+.perspective {
+  perspective: 1000px;
+  transform: perspective(1000px);
+}
+
+.features-title {
+  font-weight: 200;
+}
 
 .pagination {
   justify-content: flex-start;
@@ -4223,6 +4738,99 @@ blockquote {
 
 .cases-title {
   font-size: 90px;
+}
+
+.container-horizontal-gal {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100em;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 6em;
+  display: flex;
+}
+
+.container-horizontal-gal.no-min-height {
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 0;
+}
+
+.tricks-slider {
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.tricks-slider_slide {
+  color: #fff;
+  text-align: center;
+  flex: none;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 42%;
+  height: 80vh;
+  max-height: 80vw;
+  margin-right: 1em;
+  padding: 2em;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.image_slider {
+  z-index: 1;
+  object-fit: cover;
+  width: 200%;
+  max-width: none;
+  height: 100%;
+  max-height: 100%;
+  position: absolute;
+  inset: 0% auto 0% 0%;
+}
+
+.tricks-slider_text {
+  z-index: 2;
+  color: #fffffff2;
+  text-shadow: 0 1px 30px #1c1d1f54;
+  font-family: Gottak, Arial, sans-serif;
+  font-size: 45px;
+  font-weight: 300;
+  position: relative;
+}
+
+.progress {
+  background-color: #0047ff38;
+  width: 80%;
+  height: 1.5px;
+  margin-top: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress_fill {
+  background-color: var(--bgp-light);
+  width: 0%;
+  height: 100%;
+  position: relative;
+}
+
+.slider-link {
+  z-index: 2;
+  background-image: linear-gradient(204deg, #27272700 73%, #001958bd);
+  position: absolute;
+  inset: 0%;
+}
+
+.slider-link.is_last {
+  background-image: linear-gradient(346deg, var(--bgp-dark), #d78108 87%);
 }
 
 @media screen and (max-width: 991px) {
@@ -5087,14 +5695,187 @@ blockquote {
   }
 }
 
+#w-node-_41f86a14-906d-fef3-0187-2337e768d18b-5033b99b {
+  grid-area: Area;
+}
+
+#w-node-_41f86a14-906d-fef3-0187-2337e768d18d-5033b99b {
+  grid-area: Area-2;
+}
+
+#w-node-_41f86a14-906d-fef3-0187-2337e768d18f-5033b99b {
+  grid-area: Area-4;
+}
+
+#w-node-_41f86a14-906d-fef3-0187-2337e768d191-5033b99b {
+  grid-area: Area-3;
+}
+
+#w-node-c2975b8b-7871-0c7d-af30-2782b13edc56-5033b9a6 {
+  grid-area: Area;
+}
+
+#w-node-_4bd5dc2c-ed12-f97b-8efc-27d75a22e002-5033b9a6 {
+  grid-area: Area-2;
+}
+
+#w-node-_6c62e05e-2dc0-b8c4-30d5-1f88e2d73343-5033b9a6 {
+  grid-area: Area-3;
+}
+
+#w-node-dd85ef23-a4d5-8b05-671a-59d7c5199ff0-e70b733c {
+  grid-area: Area;
+}
+
+#w-node-_4268d1e1-1dac-9afe-fd3d-f0f278a8b052-e70b733c {
+  grid-area: Area-2;
+}
+
+#w-node-_1dc0e6d6-e552-396f-e68e-23fc6e63bfb0-e70b733c {
+  grid-area: Area-3;
+}
+
+#w-node-_544bac49-aa50-1a5f-81ba-ddae1416cb70-e70b733c {
+  grid-area: Area-4;
+}
+
+
+@font-face {
+  font-family: 'Gottak';
+  src: url('../fonts/gottak-semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gottak';
+  src: url('../fonts/gottak-thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gottak';
+  src: url('../fonts/gottak-lightitalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gottak';
+  src: url('../fonts/gottak-regularitalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gottak';
+  src: url('../fonts/gottak-extralight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gottak';
+  src: url('../fonts/gottak-semibolditalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gottak';
+  src: url('../fonts/gottak-thinitalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gottak';
+  src: url('../fonts/gottak-light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gottak';
+  src: url('../fonts/gottak-bolditalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gottak';
+  src: url('../fonts/gottak-extralightitalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Gottak';
+  src: url('../fonts/gottak-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Safiro Webfont';
+  src: url('../fonts/safiro-semibold-webfont.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Safiro Webfont';
+  src: url('../fonts/safiro-bold-webfont.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Safiro Webfont';
+  src: url('../fonts/safiro-regular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Safiro Webfont';
+  src: url('../fonts/safiro-regularitalic-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Safiro Webfont';
+  src: url('../fonts/safiro-mediumitalic-webfont.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Safiro Webfont';
+  src: url('../fonts/safiro-bolditalic-webfont.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Safiro Webfont';
+  src: url('../fonts/safiro-medium-webfont.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Safiro Webfont';
+  src: url('../fonts/safiro-semibolditalic-webfont.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
   --gap-l: 40px;
   --oval: 0px;
   --gap-s: 10px;
-}
-
-body {
-  background-color: #0e0e11;
-  background-image: url('https://www.transparenttextures.com/patterns/grained-noise.png');
 }
 
 .w-pagination-wrapper {
